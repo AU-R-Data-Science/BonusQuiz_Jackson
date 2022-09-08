@@ -1,6 +1,6 @@
 # 1) Generate 50 observations from a Binomial distribution with m = 20 and p = 0.5 and assign it to an object called `fish`.
 
-fish <- rbinom (20, n=50, p=0.5)
+(fish <- rbinom (20, n=50, p=0.5))
 
 # 2) Take the square root of `fish` and multiply it by the logarithm of 10.
 
@@ -22,7 +22,7 @@ library(idar)
 # 6) Install the simts package from CRAN using code (i.e. do not use the RStudio tabs).
 
 install.packages("simts")
-library(idar)
+library(simts)
 
 # 7) Find help for the gen_gts() function. Copy and run all the code necessary to generate the object 'x' in the first example (AR1 + WN). Apply the function as.vector() to the resulting object 'x' and assign this new vector to an object with the same name (i.e. 'x').
 
@@ -64,3 +64,4 @@ dates <- as.Date(dates, format = "%d/%m/%Y")
 
 # Optional: Create a plot of the object `x` generated in Question 10 where the y-axis represents the values of `x` and the x-axis represents the `dates` object formatted correctly. Use the plot() function with the argument `type = "l"`.
 
+plot(dates, x, type = "l")
